@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: hsl(234, 29%, 20%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+main {
+  width: 48em;
+  height: 27em;
+  background-color: white;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-2 {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  height: 21em;
+  justify-content: space-around;
+}
+h1 {
+  font-size: 2.8rem;
+  padding-bottom: 0.3em;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  padding: 0.7em;
+  margin-top: 0.3em;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+button {
+  padding: 0.7em;
+  margin-top: 1em;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+.sign-up-img {
+  width: 20em;
+  height: 25em;
+}
+li {
+  list-style: none;
+}
+.img-mobile {
+  display: none;
+}
+/* active state */
+section {
+  width: 22em;
+  height: 20em;
+  background-color: white;
+  padding: 2em;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.hidden-1 {
+  display: none;
+}
+.img-succes {
+  width: 15%;
+}
+.btn-succes {
+  width: 100%;
+}
+section h1 {
+  font-size: 1.8rem;
+}
+section p {
+  font-size: 15px;
+}
+span {
+  font-weight: bold;
+}
+.label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#error-email {
+  color: red;
+}
+
+@media screen and (max-width: 575px) {
+  main {
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0;
+    box-sizing: border-box;
+  }
+  .container-2 {
+    padding: 0.3em;
+  }
+  .sign-up-img {
+    display: none;
+  }
+  .img-mobile {
+    display: block;
+    width: 100%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  li {
+    font-size: 0.9rem;
+  }
+  section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0;
+  }
+  section img {
+    margin-bottom: 1em;
+  }
+}

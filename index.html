@@ -16,6 +16,57 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <main>
+      <div class="container-2">
+        <div class="slogan">
+          <h1>Stay Updated!</h1>
+          <h5>Join 60.000+ product managers receiving monthly updates on:</h5>
+        </div>
+        <ul>
+          <li>
+            <img src="./assets/images/icon-list.svg" alt="" /> Product discovery
+            and building matter
+          </li>
+          <li>
+            <img src="./assets/images/icon-list.svg" alt="" /> measuring to
+            ensure updates are a success
+          </li>
+          <li>
+            <img src="./assets/images/icon-list.svg" alt="" /> and much more!
+          </li>
+        </ul>
+        <form>
+          <div class="label">
+            <label for="email">Email Address</label>
+            <label id="error-email" for="email"></label>
+          </div>
+          <input type="text" name="email" id="email" />
+        </form>
+        <button id="buttonSent">Subscribe to monthly newsletter</button>
+      </div>
+      <img
+        src="./assets/images/illustration-sign-up-desktop.svg"
+        alt="sign-up"
+        class="sign-up-img"
+      />
+      <img
+        src="./assets/images/illustration-sign-up-mobile.svg"
+        class="img-mobile"
+        alt=""
+      />
+    </main>
+    <section class="hidden-1">
+      <div>
+        <img src="./assets/images/icon-success.svg" class="img-succes" alt="" />
+        <h1>Thanks for subscribing!</h1>
+        <p>
+          A confirmation email has been seen to
+          <span id="email-value"></span>. Please open it and click the button
+          inside to confirm your subscription
+        </p>
+      </div>
+      <button id="btn-dismiss" class="btn-succes">Dismiss Message</button>
+    </section>
     <script src="./js/script.js"></script>
   </body>
 </html>
